@@ -35,6 +35,15 @@
     else link.title = address;
   });
 
+  // BibTeX toggles stay in the action row and open the entry's box below it.
+  document.querySelectorAll(".bib-toggle").forEach(function (button) {
+    var box = button.closest(".pub-main").querySelector(".bib-box");
+    button.addEventListener("click", function () {
+      box.hidden = !box.hidden;
+      button.setAttribute("aria-expanded", String(!box.hidden));
+    });
+  });
+
   // Copy buttons: data-copy holds the text, otherwise the sibling <pre> is copied.
   document.querySelectorAll(".copy").forEach(function (button) {
     button.addEventListener("click", function () {

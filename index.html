@@ -61,7 +61,7 @@
     <div class="wrap hero-text">
       <p class="eyebrow">Researcher in statistical population genetics</p>
       <h1>Janek Sendrowski</h1>
-      <p class="lede">I develop statistical methods and open-source software for inferring selection, demography and ancestry from genomic data.</p>
+      <p class="lede">Developing statistical methods and open-source software for inferring selection, demography and ancestry from genomic data.</p>
       <p class="hero-meta">PhD in Bioinformatics, Aarhus University <span aria-hidden="true">·</span> Aarhus, Denmark</p>
       <ul class="link-row">
         <li><a class="btn btn-primary js-email" href="#contact">
@@ -85,7 +85,7 @@
       <div class="about-grid">
         <div class="prose">
           <p>I am a population geneticist working at the interface of statistics, mathematics and software engineering. I recently completed my PhD in Bioinformatics at the Bioinformatics Research Centre, Aarhus University.</p>
-          <p>My research focuses on how natural selection and demographic history shape patterns of genomic variation, and how these processes can be inferred reliably from data. I have worked on estimating how new mutations affect fitness and on exact models of how sampled genomes trace back to common ancestors. I have also developed methods for inferring the ancestral state of genetic variants. More recently I have become interested in ancestral recombination graphs and in making genealogy-based inference robust to the imperfect data typical of non-model organisms.</p>
+          <p>My research focuses on how natural selection and demographic history shape patterns of genomic variation, and how these processes can be inferred reliably from data. I have worked on estimating how new mutations affect fitness and on exact models of how sampled genomes trace back to common ancestors. I have also developed methods for inferring the ancestral state of genetic variants. More recently, my interest has extended to ancestral recombination graphs and to making genealogy-based inference robust to the imperfect data typical of non-model organisms.</p>
           <p>Reproducible scientific software development is central to my work. I aim for methods that are efficient, well documented, thoroughly tested and openly available, so that others can build on them with confidence.</p>
         </div>
         <aside class="facts" aria-label="Research interests">
@@ -115,13 +115,13 @@
       <div class="project-grid">
         <article class="project">
           <div class="project-head">
-            <img src="assets/logos/fastdfe.webp" alt="fastDFE logo" width="88" height="88" loading="lazy">
+            <a class="project-logo" href="https://github.com/Sendrowski/fastDFE" target="_blank" rel="noopener" aria-label="fastDFE on GitHub"><img src="assets/logos/fastdfe.webp" alt="fastDFE logo" width="88" height="88" loading="lazy"></a>
             <div>
               <h3>fastDFE</h3>
               <p class="project-tagline">Distribution of fitness effects</p>
             </div>
           </div>
-          <p>Infers the distribution of fitness effects from site-frequency spectra, with joint inference across data sets, covariates and bootstrapping. Validated against polyDFE and SLiM.</p>
+          <p>Infers the distribution of fitness effects from site-frequency spectra, with joint inference across data sets, covariates and bootstrapping.</p>
           <ul class="tags"><li>Python</li><li>R</li><li>conda-forge</li></ul>
           <div class="install"><code><span class="prompt" aria-hidden="true">$</span> pip install fastdfe</code><button class="copy" type="button" data-copy="pip install fastdfe">Copy</button></div>
           <div class="project-links">
@@ -133,13 +133,13 @@
 
         <article class="project">
           <div class="project-head">
-            <img src="assets/logos/phasegen.webp" alt="PhaseGen logo" width="88" height="88" loading="lazy">
+            <a class="project-logo" href="https://github.com/Sendrowski/PhaseGen" target="_blank" rel="noopener" aria-label="PhaseGen on GitHub"><img src="assets/logos/phasegen.webp" alt="PhaseGen logo" width="88" height="88" loading="lazy"></a>
             <div>
               <h3>PhaseGen</h3>
               <p class="project-tagline">Exact coalescent distributions</p>
             </div>
           </div>
-          <p>Exact coalescent distributions under time-inhomogeneous demography via phase-type theory, with population structure, multiple-merger coalescents and likelihood-based inference. Validated against msprime.</p>
+          <p>Exact coalescent distributions via phase-type theory, including time-varying demography, population structure, multiple mergers and two loci.</p>
           <ul class="tags"><li>Python</li><li>R</li><li>conda-forge</li></ul>
           <div class="install"><code><span class="prompt" aria-hidden="true">$</span> pip install phasegen</code><button class="copy" type="button" data-copy="pip install phasegen">Copy</button></div>
           <div class="project-links">
@@ -151,7 +151,7 @@
 
         <article class="project">
           <div class="project-head">
-            <img src="assets/logos/sfsutils.webp" alt="SFSUtils logo" width="88" height="88" loading="lazy">
+            <a class="project-logo" href="https://github.com/Sendrowski/SFSUtils" target="_blank" rel="noopener" aria-label="SFSUtils on GitHub"><img src="assets/logos/sfsutils.webp" alt="SFSUtils logo" width="88" height="88" loading="lazy"></a>
             <div>
               <h3>SFSUtils</h3>
               <p class="project-tagline">Site-frequency spectra from variant data</p>
@@ -169,7 +169,7 @@
 
         <article class="project">
           <div class="project-head">
-            <img src="assets/logos/ancestree.webp" alt="Ancestree logo" width="88" height="88" loading="lazy">
+            <a class="project-logo" href="https://github.com/Sendrowski/Ancestree" target="_blank" rel="noopener" aria-label="Ancestree on GitHub"><img src="assets/logos/ancestree.webp" alt="Ancestree logo" width="88" height="88" loading="lazy"></a>
             <div>
               <h3>Ancestree</h3>
               <p class="project-tagline">Ancestral allele inference</p>
@@ -181,7 +181,7 @@
           <div class="project-links">
             <a href="https://ancestree.readthedocs.io" target="_blank" rel="noopener">Documentation</a>
             <a href="https://github.com/Sendrowski/Ancestree" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://doi.org/10.64898/2026.09.11.750934" target="_blank" rel="noopener">Preprint</a>
+            <a href="https://doi.org/10.64898/2026.09.11.750934" target="_blank" rel="noopener">Paper</a>
           </div>
         </article>
       </div>
@@ -199,19 +199,6 @@
         <li class="pub">
           <span class="pub-year">2026</span>
           <div class="pub-main">
-            <p class="pub-title">Inference of the distribution of fitness effects and its genomic covariates from site frequency spectrum data using fastDFE</p>
-            <p class="pub-authors"><span class="me">Sendrowski&nbsp;J</span>, Bataillon&nbsp;T</p>
-            <p class="pub-venue">In Statistical Population Genomics, 2nd edition. Springer</p>
-            <div class="pub-actions">
-              <span class="badge">Book chapter</span>
-              <span class="badge">In print</span>
-              <span class="badge badge-soft">Tutorial</span>
-            </div>
-          </div>
-        </li>
-        <li class="pub">
-          <span class="pub-year">2026</span>
-          <div class="pub-main">
             <p class="pub-title"><a href="https://doi.org/10.64898/2026.09.11.750934" target="_blank" rel="noopener">Ancestree: unified likelihood inference of ancestral alleles under supplied or inferred genealogies</a></p>
             <p class="pub-authors"><span class="me">Sendrowski&nbsp;J</span>, Bataillon&nbsp;T</p>
             <p class="pub-venue">bioRxiv</p>
@@ -219,14 +206,15 @@
               <span class="badge">Preprint</span>
               <span class="badge badge-soft">Software</span>
               <a class="chip" href="https://doi.org/10.64898/2026.09.11.750934" target="_blank" rel="noopener">DOI</a>
-              <details class="bib"><summary class="chip">BibTeX</summary><div class="bib-box"><pre>@article{sendrowski2026ancestree,
+              <button class="chip bib-toggle" type="button" aria-expanded="false">BibTeX</button>
+            </div>
+            <div class="bib-box" hidden><pre>@article{sendrowski2026ancestree,
   title   = {Ancestree: unified likelihood inference of ancestral alleles under supplied or inferred genealogies},
   author  = {Sendrowski, Janek and Bataillon, Thomas},
   journal = {bioRxiv},
   year    = {2026},
   doi     = {10.64898/2026.09.11.750934}
-}</pre><button class="copy" type="button">Copy</button></div></details>
-            </div>
+}</pre><button class="copy" type="button">Copy</button></div>
           </div>
         </li>
         <li class="pub">
@@ -239,13 +227,27 @@
               <span class="badge">Preprint</span>
               <span class="badge badge-soft">Comparative genomics</span>
               <a class="chip" href="https://doi.org/10.64898/2026.03.25.714151" target="_blank" rel="noopener">DOI</a>
-              <details class="bib"><summary class="chip">BibTeX</summary><div class="bib-box"><pre>@article{sendrowski2026primates,
+              <button class="chip bib-toggle" type="button" aria-expanded="false">BibTeX</button>
+            </div>
+            <div class="bib-box" hidden><pre>@article{sendrowski2026primates,
   title   = {Comparison of the Distribution of Fitness Effects Across Primates},
   author  = {Sendrowski, Janek and Pedersen, Bjarke M. and Bergman, Juraj and Pankratov, Vasili and Bataillon, Thomas},
   journal = {bioRxiv},
   year    = {2026},
   doi     = {10.64898/2026.03.25.714151}
-}</pre><button class="copy" type="button">Copy</button></div></details>
+}</pre><button class="copy" type="button">Copy</button></div>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year">2026</span>
+          <div class="pub-main">
+            <p class="pub-title"><a href="https://link.springer.com/book/9781071655627" target="_blank" rel="noopener">Inference of the distribution of fitness effects and its genomic covariates from site frequency spectrum data using fastDFE</a></p>
+            <p class="pub-authors"><span class="me">Sendrowski&nbsp;J</span>, Bataillon&nbsp;T</p>
+            <p class="pub-venue">In Statistical Population Genomics, 2nd edition. Springer</p>
+            <div class="pub-actions">
+              <span class="badge">Book chapter</span>
+              <span class="badge">In print</span>
+              <span class="badge badge-soft">Tutorial</span>
             </div>
           </div>
         </li>
@@ -258,7 +260,9 @@
             <div class="pub-actions">
               <span class="badge badge-soft">Local adaptation</span>
               <a class="chip" href="https://doi.org/10.1093/molbev/msag074" target="_blank" rel="noopener">DOI</a>
-              <details class="bib"><summary class="chip">BibTeX</summary><div class="bib-box"><pre>@article{nocchi2026spruce,
+              <button class="chip bib-toggle" type="button" aria-expanded="false">BibTeX</button>
+            </div>
+            <div class="bib-box" hidden><pre>@article{nocchi2026spruce,
   title   = {Replicated hybrid zones reveal genomic patterns of local adaptation and introgression in spruce},
   author  = {Nocchi, Gabriele and Sendrowski, Janek and Shi, Andy and Boufford, Brianne and Lamothe, Manuel and Isabel, Nathalie and Yeaman, Sam},
   journal = {Molecular Biology and Evolution},
@@ -267,8 +271,7 @@
   pages   = {msag074},
   year    = {2026},
   doi     = {10.1093/molbev/msag074}
-}</pre><button class="copy" type="button">Copy</button></div></details>
-            </div>
+}</pre><button class="copy" type="button">Copy</button></div>
           </div>
         </li>
         <li class="pub">
@@ -280,7 +283,9 @@
             <div class="pub-actions">
               <span class="badge badge-soft">Software</span>
               <a class="chip" href="https://doi.org/10.1093/genetics/iyaf135" target="_blank" rel="noopener">DOI</a>
-              <details class="bib"><summary class="chip">BibTeX</summary><div class="bib-box"><pre>@article{sendrowski2025phasegen,
+              <button class="chip bib-toggle" type="button" aria-expanded="false">BibTeX</button>
+            </div>
+            <div class="bib-box" hidden><pre>@article{sendrowski2025phasegen,
   title   = {PhaseGen: exact solutions for time-inhomogeneous multivariate coalescent distributions under diverse demographies},
   author  = {Sendrowski, Janek and Hobolth, Asger},
   journal = {Genetics},
@@ -289,8 +294,7 @@
   pages   = {iyaf135},
   year    = {2025},
   doi     = {10.1093/genetics/iyaf135}
-}</pre><button class="copy" type="button">Copy</button></div></details>
-            </div>
+}</pre><button class="copy" type="button">Copy</button></div>
           </div>
         </li>
         <li class="pub">
@@ -302,7 +306,9 @@
             <div class="pub-actions">
               <span class="badge badge-soft">Review</span>
               <a class="chip" href="https://doi.org/10.1007/s00122-025-04973-1" target="_blank" rel="noopener">DOI</a>
-              <details class="bib"><summary class="chip">BibTeX</summary><div class="bib-box"><pre>@article{sendrowski2025insilico,
+              <button class="chip bib-toggle" type="button" aria-expanded="false">BibTeX</button>
+            </div>
+            <div class="bib-box" hidden><pre>@article{sendrowski2025insilico,
   title   = {In silico prediction of variant effects: promises and limitations for precision plant breeding},
   author  = {Sendrowski, Janek and Bataillon, Thomas and Ramstein, Guillaume P.},
   journal = {Theoretical and Applied Genetics},
@@ -311,8 +317,7 @@
   pages   = {193},
   year    = {2025},
   doi     = {10.1007/s00122-025-04973-1}
-}</pre><button class="copy" type="button">Copy</button></div></details>
-            </div>
+}</pre><button class="copy" type="button">Copy</button></div>
           </div>
         </li>
         <li class="pub">
@@ -324,7 +329,9 @@
             <div class="pub-actions">
               <span class="badge badge-soft">Software</span>
               <a class="chip" href="https://doi.org/10.1093/molbev/msae070" target="_blank" rel="noopener">DOI</a>
-              <details class="bib"><summary class="chip">BibTeX</summary><div class="bib-box"><pre>@article{sendrowski2024fastdfe,
+              <button class="chip bib-toggle" type="button" aria-expanded="false">BibTeX</button>
+            </div>
+            <div class="bib-box" hidden><pre>@article{sendrowski2024fastdfe,
   title   = {fastDFE: Fast and Flexible Inference of the Distribution of Fitness Effects},
   author  = {Sendrowski, Janek and Bataillon, Thomas},
   journal = {Molecular Biology and Evolution},
@@ -333,8 +340,7 @@
   pages   = {msae070},
   year    = {2024},
   doi     = {10.1093/molbev/msae070}
-}</pre><button class="copy" type="button">Copy</button></div></details>
-            </div>
+}</pre><button class="copy" type="button">Copy</button></div>
           </div>
         </li>
         <li class="pub">
@@ -346,7 +352,9 @@
             <div class="pub-actions">
               <span class="badge badge-soft">Demography</span>
               <a class="chip" href="https://doi.org/10.1111/nph.18480" target="_blank" rel="noopener">DOI</a>
-              <details class="bib"><summary class="chip">BibTeX</summary><div class="bib-box"><pre>@article{li2022contact,
+              <button class="chip bib-toggle" type="button" aria-expanded="false">BibTeX</button>
+            </div>
+            <div class="bib-box" hidden><pre>@article{li2022contact,
   title   = {Teasing apart the joint effect of demography and natural selection in the birth of a contact zone},
   author  = {Li, Lili and Milesi, Pascal and Tiret, Mathieu and Chen, Jun and Sendrowski, Janek and Baison, John and Chen, Zhi-qiang and Zhou, Linghua and Karlsson, Bo and Berlin, Mats and Westin, Johan and Garcia-Gil, Maria Rosario and Wu, Harry X. and Lascoux, Martin},
   journal = {New Phytologist},
@@ -355,8 +363,7 @@
   pages   = {1976--1987},
   year    = {2022},
   doi     = {10.1111/nph.18480}
-}</pre><button class="copy" type="button">Copy</button></div></details>
-            </div>
+}</pre><button class="copy" type="button">Copy</button></div>
           </div>
         </li>
       </ol>
@@ -396,7 +403,7 @@
   <div class="wrap footer-grid">
     <div>
       <h2 class="footer-title">Get in touch</h2>
-      <p class="footer-text">Please feel free to reach out with questions about the software or ideas for collaboration. Bug reports are ideally filed as GitHub issues.</p>
+      <p class="footer-text">Please feel free to reach out with questions about my work, the software or possible collaborations. Bug reports are ideally filed as GitHub issues.</p>
     </div>
     <ul class="footer-links">
       <li><a class="js-email" href="#contact">
@@ -410,7 +417,7 @@
     </ul>
   </div>
   <div class="wrap footer-meta">
-    <p>Last updated September 2026.</p>
+    <p>Last updated September 2026</p>
     <a class="to-top" href="#top" aria-label="Back to top" title="Back to top">
       <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg>
     </a>
@@ -419,8 +426,8 @@
 
 <div class="mrca" aria-hidden="true" hidden>
   <svg viewBox="0 0 640 50" preserveAspectRatio="xMidYMax meet">
-    <path pathLength="1" d="M20 46V38M60 46V38M20 38H60M100 46V34M140 46V34M100 34H140M180 46V40M220 46V40M180 40H220M260 46V36M300 46V36M260 36H300M340 46V39M380 46V39M340 39H380M420 46V33M460 46V33M420 33H460M500 46V37M540 46V37M500 37H540M580 46V41M620 46V41M580 41H620M40 38V26M120 34V26M40 26H120M200 40V24M280 36V24M200 24H280M360 39V22M440 33V22M360 22H440M520 37V27M600 41V27M520 27H600M80 26V14M240 24V14M80 14H240M400 22V12M560 27V12M400 12H560M160 14V5M480 12V5M160 5H480"/>
-    <circle cx="320" cy="5" r="4.5"/>
+    <path pathLength="1" d="M152 50V43M200 50V43M152 43H200M392 50V42M440 50V42M392 42H440M56 50V40M104 50V40M56 40H104M248 50V38M296 50V38M248 38H296M488 50V36M536 50V36M488 36H536M272 38V31M344 50V31M272 31H344M80 40V28M176 43V28M80 28H176M512 36V27M584 50V27M512 27H584M416 42V20M548 27V20M416 20H548M308 31V15M482 20V15M308 15H482M128 28V9M395 15V9M128 9H395M261.5 9V5"/>
+    <circle cx="261.5" cy="5" r="4.5"/>
   </svg>
 </div>
 </body>

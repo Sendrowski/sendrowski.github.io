@@ -76,6 +76,7 @@
 
 html {
   scroll-behavior: smooth;
+  overscroll-behavior-y: none;
   scroll-padding-top: calc(var(--header-h) + 1rem);
   -webkit-text-size-adjust: 100%;
 }
@@ -362,8 +363,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   height: 5.5rem;
   flex: none;
   border-radius: 50%;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.12));
 }
+.project-logo { flex: none; display: block; border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12); }
+.project-head img { pointer-events: none; -webkit-user-select: none; user-select: none; }
+.project-logo:hover img { filter: brightness(0.87); }
 .project h3 { font-size: 1.6rem; }
 .project-tagline { margin-top: 0.2rem; color: var(--muted); font-size: 0.95rem; }
 .project > p { font-size: 0.98rem; line-height: 1.62; }
@@ -451,7 +454,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .pub-title { font-family: var(--serif); font-size: 1.14rem; font-weight: 600; line-height: 1.4; }
 .pub-title a { color: var(--ink); text-decoration: none; }
-.pub-title a:hover { color: var(--accent); text-decoration: underline; }
+.pub-title a:hover { color: color-mix(in srgb, var(--ink) 72%, var(--accent)); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent); }
 .pub-authors { max-width: 44rem; margin-top: 0.2rem; font-size: 0.93rem; color: var(--muted); }
 .me { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
 .pub-venue { margin-top: 0.1rem; font-size: 0.93rem; color: var(--muted); }
@@ -488,16 +491,14 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .badge:hover { background: color-mix(in srgb, var(--amber) 28%, transparent); }
 .badge-soft:hover { background: color-mix(in srgb, var(--accent) 20%, transparent); }
 
-.bib { flex-basis: auto; }
-.bib summary { display: flex; width: max-content; list-style: none; }
-.bib summary::-webkit-details-marker { display: none; }
-.bib[open] { flex-basis: 100%; }
-.bib[open] summary { color: var(--ink); border-color: var(--line-hover); }
+button.chip { font: 500 0.78rem/1.5 var(--sans); }
+.bib-toggle[aria-expanded="true"] { color: var(--ink); border-color: var(--line-hover); }
 .bib-box { position: relative; margin-top: 0.6rem; }
 .bib-box pre {
   margin: 0;
   padding: 1rem 1.1rem;
-  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
   border-radius: 10px;
   background: var(--surface-2);
   border: 1px solid var(--line);
@@ -557,7 +558,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   border-top: 1px solid var(--footer-line);
 }
 .site-footer a { color: var(--footer-strong); }
-.site-footer a:hover { color: var(--accent); }
+.site-footer a:hover { color: color-mix(in srgb, var(--footer-strong) 78%, var(--accent)); }
 
 .footer-grid {
   display: grid;
@@ -570,7 +571,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer-links { display: grid; gap: 0.6rem; justify-items: start; margin-left: clamp(0rem, 4vw, 3.5rem); }
 .footer-links a { display: inline-flex; align-items: center; gap: 0.65rem; text-decoration: none; }
 .footer-links a span { border-bottom: 1px solid var(--footer-line); }
-.footer-links a:hover span { border-color: currentColor; }
+.footer-links a:hover span { border-color: color-mix(in srgb, var(--footer-strong) 40%, transparent); }
 .footer-links .icon { width: 1.15rem; height: 1.15rem; opacity: 0.9; }
 
 .footer-meta {
@@ -606,7 +607,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   right: 0;
   z-index: 40;
   height: 3.5rem;
-  padding: 0.35rem 1rem 0.55rem;
+  padding: 0.35rem 1rem 0;
   pointer-events: none;
   opacity: 0;
 }
@@ -745,7 +746,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
     display: flex;
     align-items: center;
     height: 2.6rem;
-    padding: 0 0 0 1.6rem;
+    padding: 0 0 0 1.95rem;
     border-radius: 0;
     font-size: 0.95rem;
     transition: color 0.15s;
@@ -770,7 +771,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 @media print {
-  .site-header, .theme-toggle, .copy, .bib, .skip, .link-row { display: none !important; }
+  .site-header, .theme-toggle, .copy, .bib-toggle, .bib-box, .skip, .link-row { display: none !important; }
   body { background: #fff; color: #000; }
   .section-alt, .hero, .site-footer { background: none; border: 0; color: #000; }
   .site-footer a, .footer-title { color: #000; }
