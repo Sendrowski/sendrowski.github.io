@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#00788f"/>
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <path stroke="#ffffff" d="M20 4C20 11 44 11 44 18C44 25 20 25 20 32C20 39 44 39 44 46C44 53 20 53 20 60"/>
+    <path stroke="#9fe3ec" d="M44 4C44 11 20 11 20 18C20 25 44 25 44 32C44 39 20 39 20 46C20 53 44 53 44 60"/>
+  </g>
+  <g font-family="Menlo, 'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#f5c451" text-anchor="middle">
+    <text x="32" y="21.5">01</text>
+    <text x="32" y="35.5">10</text>
+    <text x="32" y="49.5">01</text>
+  </g>
+</svg>
