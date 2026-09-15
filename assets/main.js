@@ -32,6 +32,7 @@
     link.href = "mailto:" + address;
     var label = link.querySelector(".email-text");
     if (label) label.textContent = address;
+    else link.title = address;
   });
 
   // Copy buttons: data-copy holds the text, otherwise the sibling <pre> is copied.

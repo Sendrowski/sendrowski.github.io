@@ -725,29 +725,33 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
     content: "";
     position: absolute;
     left: 0;
-    width: 2px;
-    border-radius: 2px;
+    width: 14px;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 14 42%22 preserveAspectRatio=%22none%22%3E%3Cg fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.7%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M11 0C11 10.5 3 10.5 3 21C3 31.5 11 31.5 11 42%22/%3E%3Cpath d=%22M3 0C3 10.5 11 10.5 11 21C11 31.5 3 31.5 3 42%22/%3E%3Cpath d=%22M4.5 21H9.5%22 stroke-width=%221.4%22/%3E%3C/g%3E%3C/svg%3E") 0 0 / 14px 2.6rem repeat-y;
+    mask: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 14 42%22 preserveAspectRatio=%22none%22%3E%3Cg fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.7%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M11 0C11 10.5 3 10.5 3 21C3 31.5 11 31.5 11 42%22/%3E%3Cpath d=%22M3 0C3 10.5 11 10.5 11 21C11 31.5 3 31.5 3 42%22/%3E%3Cpath d=%22M4.5 21H9.5%22 stroke-width=%221.4%22/%3E%3C/g%3E%3C/svg%3E") 0 0 / 14px 2.6rem repeat-y;
   }
-  .nav ul::before { top: 0; bottom: 0; background: var(--line); }
+  .nav ul::before { top: 0; bottom: 0; background: color-mix(in srgb, var(--ink) 22%, var(--line)); }
   .nav ul::after {
     top: 0;
     height: 2.6rem;
     background: var(--accent);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 14 42%22 preserveAspectRatio=%22none%22%3E%3Cg fill=%22none%22 stroke=%22%23000%22 stroke-width=%222.7%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M11 1C11 10.5 3 10.5 3 21C3 31.5 11 31.5 11 41%22/%3E%3Cpath d=%22M3 1C3 10.5 11 10.5 11 21C11 31.5 3 31.5 3 41%22/%3E%3Cpath d=%22M4.5 21H9.5%22 stroke-width=%222.3%22/%3E%3C/g%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 14 42%22 preserveAspectRatio=%22none%22%3E%3Cg fill=%22none%22 stroke=%22%23000%22 stroke-width=%222.7%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M11 1C11 10.5 3 10.5 3 21C3 31.5 11 31.5 11 41%22/%3E%3Cpath d=%22M3 1C3 10.5 11 10.5 11 21C11 31.5 3 31.5 3 41%22/%3E%3Cpath d=%22M4.5 21H9.5%22 stroke-width=%222.3%22/%3E%3C/g%3E%3C/svg%3E");
+    filter: drop-shadow(0 0 4px color-mix(in srgb, var(--accent) 85%, transparent));
     transform: translateY(calc(var(--i) * 2.6rem));
-    transition: transform 0.35s cubic-bezier(0.3, 0.7, 0.2, 1);
+    transition: transform 0.45s cubic-bezier(0.3, 0.7, 0.2, 1);
   }
   .nav a, .nav a:hover, .nav a[aria-current="true"] { background: transparent; }
   .nav a {
     display: flex;
     align-items: center;
     height: 2.6rem;
-    padding: 0 0 0 1.15rem;
+    padding: 0 0 0 1.6rem;
     border-radius: 0;
     font-size: 0.95rem;
     transition: color 0.15s;
   }
   .nav a:hover { color: var(--ink); }
-  .nav a[aria-current="true"] { color: var(--accent-strong); }
+  .nav a[aria-current="true"] { color: var(--accent-strong); font-weight: 600; }
 
   .theme-toggle { margin-top: auto; }
 
